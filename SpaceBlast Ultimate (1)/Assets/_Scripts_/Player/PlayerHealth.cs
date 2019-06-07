@@ -121,7 +121,7 @@ public class PlayerHealth : MonoBehaviour, ITakeDamage
         }
     }
 
-    IEnumerator Flasher() // Flashes red when trigger enetered
+    IEnumerator Flasher() // Flashes white when trigger enetered
     {
         MeshRenderer meshRen = GetComponentInChildren<MeshRenderer>();
 

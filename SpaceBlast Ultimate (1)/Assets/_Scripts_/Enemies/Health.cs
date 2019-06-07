@@ -11,7 +11,7 @@ public class Health : MonoBehaviour, ITakeDamage
     public float hp = 10f;
     public GameObject explosion;
     public GameObject score;
-    public int killPoints = 1;
+    public int killPoints;
 
     public int InternalKillPoints { get; set; }
     #endregion

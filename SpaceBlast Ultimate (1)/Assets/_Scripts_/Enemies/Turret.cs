@@ -4,7 +4,6 @@ using System.Collections;
 [System.Serializable]
 public partial class Turret : MonoBehaviour
 {
-
     public Transform moveSegment;
     public float Speed = 30f;
     public float Limit = 90f;
@@ -17,13 +16,13 @@ public partial class Turret : MonoBehaviour
         this.yawSegmentStartRotation = this.moveSegment.localRotation;
     }
 
-    public virtual void Update()
+    public virtual void Update() 
     {
         float angle = 0.0f;
         Vector3 targetRelative = default(Vector3);
         Quaternion targetRotation = default(Quaternion);
 
-        if (this.moveSegment && (this.Limit != 0f))
+        if (this.moveSegment && (this.Limit != 0f)) // Rotates selected rigidB along the "target" Z/X-axis
         {
             targetRelative = this.moveSegment.InverseTransformPoint(this.target);
             angle = Mathf.Atan2(targetRelative.x, targetRelative.z) * Mathf.Rad2Deg;
@@ -41,5 +40,4 @@ public partial class Turret : MonoBehaviour
     {
         this.target = target;
     }
-
 }

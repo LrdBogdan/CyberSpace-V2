@@ -62,8 +62,4 @@ public class ScoreSystem : MonoBehaviour //Bogdan C. SU17A - 2019©\\
             PlayerHealth.playerDied = true;
         }
     }
-
-    public static void SetHighScore()
-    {
-    }
 }

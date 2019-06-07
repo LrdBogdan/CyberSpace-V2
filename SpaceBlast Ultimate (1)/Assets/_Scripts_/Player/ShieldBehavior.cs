@@ -18,7 +18,7 @@ public class ShieldBehavior : MonoBehaviour //Bogdan C. SU17A - 2019©\\
     public float ShieldBarYOffset = 1;
     #endregion
 
-    void Start()
+    void Start() 
     {
         currentShield = 0;
         maxShield = 0;

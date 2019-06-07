@@ -33,7 +33,6 @@ public class GameController : MonoBehaviour //Bogdan C. SU17A - 2019©\\
             scoreText.text = gameScore.ToString();
             StartCoroutine(LoadGameOver());
             gameGUI.SetActive(false);
-            ScoreSystem.SetHighScore();
         }
 
         else
